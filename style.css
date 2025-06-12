@@ -1,9 +1,8 @@
-
 /* إعدادات أساسية */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f1f3;
+  font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #d9e4ff);
   color: #222;
   padding: 20px;
 }
@@ -48,35 +47,43 @@ body {
   text-decoration: none;
   color: white;
   transition: background-color 0.3s ease;
-  min-width: 120px;
+  min-width: 140px;
   text-align: center;
   box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* ألوان متناسقة */
+.social-btn i {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+/* ألوان متناسقة مع تدرجات */
 .social-btn.instagram {
-  background: #E4405F;
+  background: linear-gradient(45deg, #E4405F, #C13584);
 }
 
 .social-btn.instagram:hover {
-  background: #B52A46;
+  background: linear-gradient(45deg, #B52A46, #8E1D34);
 }
 
 .social-btn.whatsapp {
-  background: #25D366;
+  background: linear-gradient(45deg, #25D366, #1EBE4D);
 }
 
 .social-btn.whatsapp:hover {
-  background: #1DA851;
+  background: linear-gradient(45deg, #1DA851, #147936);
 }
 
-/* زر Discord */
 .social-btn.discord {
-  background: #5865F2; /* لون Discord الأزرق */
+  background: linear-gradient(45deg, #5865F2, #4752C4);
 }
 
 .social-btn.discord:hover {
-  background: #4752C4; /* لون أغمق عند التمرير */
+  background: linear-gradient(45deg, #4752C4, #3B40A0);
 }
 
 /* قسم الألعاب */
