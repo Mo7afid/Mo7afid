@@ -1,0 +1,155 @@
+/* إعدادات أساسية */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f1f3;
+  color: #222;
+  padding: 20px;
+}
+
+/* رأس الموقع */
+.header {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.header h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+/* خط فاصل خفيف */
+.divider {
+  width: 80px;
+  height: 2px;
+  background: #bbb;
+  margin: 0 auto 25px;
+  opacity: 0.3;
+  border-radius: 1px;
+}
+
+/* أزرار التواصل */
+.social-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  padding: 10px 25px;
+  border-radius: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+  min-width: 120px;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* ألوان متناسقة */
+.social-btn.instagram {
+  background: #E4405F;
+}
+
+.social-btn.instagram:hover {
+  background: #B52A46;
+}
+
+.social-btn.whatsapp {
+  background: #25D366;
+}
+
+.social-btn.whatsapp:hover {
+  background: #1DA851;
+}
+
+/* قسم الألعاب */
+.games-section {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* بطاقات الألعاب */
+.card {
+  background: white;
+  flex: 1 1 40%;
+  padding: 25px 20px;
+  border-radius: 18px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+/* ألوان خلفية مختلفة لكل بطاقة */
+.card.chess {
+  background: #d6eaff; /* أزرق فاتح */
+  color: #003366;
+}
+
+.card.brawlstars {
+  background: #ffe2d6; /* برتقالي فاتح */
+  color: #8b3c00;
+}
+
+.card h2 {
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  opacity: 0.85;
+}
+
+/* زر في البطاقة */
+.btn {
+  background-color: rgba(0,0,0,0.1);
+  padding: 10px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
+  box-shadow: inset 0 0 10px rgba(255 255 255 / 0.5);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: rgba(0,0,0,0.25);
+  color: #000;
+}
+
+/* استجابة الموبايل */
+@media (max-width: 700px) {
+  .games-section {
+    flex-direction: column;
+  }
+  .card {
+    flex: 1 1 100%;
+  }
+}
