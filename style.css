@@ -1,3 +1,4 @@
+
 /* إعدادات أساسية */
 body {
   margin: 0;
@@ -67,6 +68,15 @@ body {
 
 .social-btn.whatsapp:hover {
   background: #1DA851;
+}
+
+/* زر Discord */
+.social-btn.discord {
+  background: #5865F2; /* لون Discord الأزرق */
+}
+
+.social-btn.discord:hover {
+  background: #4752C4; /* لون أغمق عند التمرير */
 }
 
 /* قسم الألعاب */
